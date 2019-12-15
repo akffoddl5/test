@@ -4,8 +4,12 @@ using namespaces std;
 
 int main(){
 
-	//cout<<"hello world";
+	cout<<"hello world";
 	
-	//return 0;
+	for(int i=0;i<3;i++){
+	    cout<<i<<'\n';
+    }
+	
+	return 0;
 
 }
