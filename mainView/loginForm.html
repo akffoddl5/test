@@ -60,41 +60,42 @@ cff4e57a39b8fb82c04e79df23fcdd75
 							<!-- Content -->
 								<section>
 									<header class="main">
+										<center><h1>로그인</h1></center>
 									</header>
 
+									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
 
-									<form action="#" method="post" id="loginForm">
-									<table id="loginTable" >
+									<form action="#" method="post">
+									<table>
 									<tr>
-									<td id="loginId"><input type="text" name="id" placeholder="아이디" ></td>
-									<td rowspan="2" id="loginBt"><input id="lgBt"type="submit" value="로그인"></td>
+									<td>id</td><td><input id="loginId" type="text" name="id" maxlength="10" min="10" placeholder="아이디" ></td>
+									<td>pw</td><td><input id="loginPw" type="password" name="pw" maxlength="10" min="10" ></td>
 									</tr>
-									<tr id="loginTr1">
-									<td id="loginPw"><input type="password" name="pw" placeholder="비밀번호"></td>
+									<tr>
+									</tr>
+									<tr>
+									<td><input id="kysBt" type="submit" value="전송"  ></td>
 									</tr>
 									</table>
-									</form><input id="save" type="checkbox"><label id="save1" for="save">아이디 저장</label>
 										
 										
 										
-									<form>
-									<table id="loginApi">
-									<tr>
-									<td>
+									
+									</form>
 									 <div id="naver_id_login"></div>
   <!-- //네이버아이디로로그인 버튼 노출 영역 -->
   <script type="text/javascript">
      var naver_id_login = new naver_id_login("PR_ChEILleJV5pEXfozT", "http://localhost:8081/mainPrjTmp/mainView/index.html");
      var state = naver_id_login.getUniqState();
-     naver_id_login.setButton("white", 2, 50);
+     naver_id_login.setButton("white", 2,40);
      naver_id_login.setDomain("http://localhost:8081/mainPrjTmp/mainView/loginForm.html");
      naver_id_login.setState(state);
      naver_id_login.setPopup();
      naver_id_login.init_naver_id_login();
 
   </script>
-  </td>
-  <td>
+  
+  <hr color= "red">
   <a id="kakao-login-btn"></a>
 <a href="http://developers.kakao.com/logout"></a>
 <script type='text/javascript'>
@@ -145,25 +146,9 @@ cff4e57a39b8fb82c04e79df23fcdd75
   //]]>
 </script>
   
-									</td>
-									</tr>
-									</table>
-									</form>
-  <form>
-  	<table id="btTable">
-  		<tr>
-  			<td><input id="joinBt" type="button" name="join" value="회원가입"></td>
-  			<td><input id="idFindBt" type="button" name="idfind" value="아이디 찾기"></td>
-  			<td><input id="pwFindBt" type="button" name="pwfind" value="비밀번호 찾기"></td>
-  		</tr>
-  	</table>
-  </form>
-  <center>
-  <h6>
-	이용약관&nbsp; 개인정보처리방침&nbsp; 책임의&nbsp; 한계와 &nbsp; 법적고지&nbsp; 회원정보&nbsp; 고객센터<br>
-	Team6Copyright © Team6 Corp. All Rights Reserved.								
-  </h6>
-  </center>
+  <hr color="red">
+  
+									
 									
 									
 								</section>
