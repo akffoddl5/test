@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AskBoardDAO">
+
+	<select id="getBoard" parameterType="askBoard" resultType="askBoard">
+	SELECT * FROM askboard WHERE num = #{num}
+	</select>
+	
+	<select id="insertBoard" parameterType="askBoard" resultType="askBoard">
+	INSERT INTO askboard(num, type,title,writer,content,secret) VALUES(askboard_seq.nextVal, #{type}, #{title}, #{title} , #{content} , #{secret} ) 
+	</select>
+	
+	
+	
+
+</mapper>
